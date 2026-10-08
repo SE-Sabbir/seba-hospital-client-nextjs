@@ -17,14 +17,14 @@ export default function ServicesGrid() {
   return (
     <section id="departments" className="bg-white py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div data-reveal="up" className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
             Comprehensive Healthcare Services for You
           </h2>
           <p className="mt-4 text-lg">Everything your family needs, under one roof.</p>
         </div>
 
-        <ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ul data-reveal-stagger="up" className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map(({ icon: Icon, title, text }) => (
             <li key={title}>
               <a

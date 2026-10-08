@@ -24,7 +24,7 @@ export default function AppointmentForm() {
   return (
     <section id="appointment" className="bg-ice-blue py-20 lg:py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
-        <div>
+        <div data-reveal="left">
           <h2 className="text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
             Easy &amp; Quick Appointment Booking
           </h2>
@@ -46,7 +46,7 @@ export default function AppointmentForm() {
           </p>
         </div>
 
-        <div id="appointment-form" className="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft sm:p-8">
+        <div data-reveal="right" id="appointment-form" className="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft sm:p-8">
           {submitted ? (
             <div role="status" className="py-10 text-center">
               <CheckCircle2 className="mx-auto h-14 w-14 text-accent-teal" aria-hidden="true" />

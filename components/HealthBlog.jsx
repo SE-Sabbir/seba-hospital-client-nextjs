@@ -6,11 +6,11 @@ export default function HealthBlog() {
   return (
     <section className="bg-white py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
+        <h2 data-reveal="zoom" className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
           Latest News &amp; Health Tips
         </h2>
 
-        <ul className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <ul data-reveal-stagger="up" className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((p) => (
             <li key={p.title}>
               <article className="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-soft">

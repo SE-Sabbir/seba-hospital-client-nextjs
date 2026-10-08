@@ -5,7 +5,7 @@ import { images } from "@/lib/data";
 export default function CallToAction() {
   return (
     <section className="px-4 pb-20 sm:px-6 lg:px-8">
-      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-brand-dark">
+      <div data-reveal="zoom" className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-brand-dark">
         <Image src={images.stethoscope} alt="" fill sizes="1280px" className="object-cover opacity-20 mix-blend-luminosity" />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/90 to-brand-dark/40" aria-hidden="true" />
         <div className="relative flex flex-col items-start gap-8 px-8 py-14 sm:px-14 md:flex-row md:items-center md:justify-between md:py-16">

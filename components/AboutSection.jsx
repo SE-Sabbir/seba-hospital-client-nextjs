@@ -13,7 +13,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="bg-ice-blue py-20 lg:py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
-        <div className="relative">
+        <div data-reveal="left" className="relative">
           <div className="relative aspect-[5/4] overflow-hidden rounded-3xl bg-slate-200 shadow-soft">
             <Image
               src={images.ot}
@@ -25,7 +25,7 @@ export default function AboutSection() {
           </div>
           <div className="absolute -bottom-6 right-4 flex items-center gap-3 rounded-2xl bg-brand px-5 py-4 text-white shadow-soft sm:right-8">
             <ShieldCheck className="h-8 w-8" aria-hidden="true" />
-            <div>
+            <div data-reveal="right">
               <p className="font-display text-xl font-extrabold leading-none">Certified</p>
               <p className="text-sm text-sky-100">Quality care standards</p>
             </div>
@@ -40,7 +40,7 @@ export default function AboutSection() {
             For over a decade, Seba Hospital has combined clinical excellence with a warm,
             patient-first approach, so every visit feels safe and well looked after.
           </p>
-          <ul className="mt-8 space-y-4">
+          <ul data-reveal-stagger="right" className="mt-8 space-y-4">
             {points.map((p) => (
               <li key={p} className="flex items-center gap-3 font-medium text-ink">
                 <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-accent-teal text-white">

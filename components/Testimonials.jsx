@@ -6,7 +6,7 @@ export default function Testimonials() {
   return (
     <section className="bg-ice-blue py-20 lg:py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
-        <div>
+        <div data-reveal="left">
           <h2 className="text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
             Trusted by Thousands of Happy Patients
           </h2>
@@ -16,7 +16,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <figure className="relative rounded-3xl border border-slate-200 bg-white p-8 shadow-soft transition duration-300 hover:-translate-y-1 sm:p-10">
+        <figure data-reveal="right" className="relative rounded-3xl border border-slate-200 bg-white p-8 shadow-soft transition duration-300 hover:-translate-y-1 sm:p-10">
           <Quote className="absolute right-8 top-8 h-12 w-12 text-sky-100" aria-hidden="true" />
           <div className="flex gap-1 text-amber-400" role="img" aria-label="Rated 5 out of 5 stars">
             {Array.from({ length: 5 }).map((_, i) => (

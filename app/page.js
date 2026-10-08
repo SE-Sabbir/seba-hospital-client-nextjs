@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import PageAnimations from "@/components/PageAnimations";
 import HeroSection from "@/components/HeroSection";
 import ServicesGrid from "@/components/ServicesGrid";
 import AboutSection from "@/components/AboutSection";
@@ -13,6 +14,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
+      <PageAnimations />
       <Navbar />
       <main id="main">
         <HeroSection />

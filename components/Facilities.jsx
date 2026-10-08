@@ -11,10 +11,10 @@ export default function Facilities() {
   return (
     <section className="bg-white py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="mx-auto max-w-2xl text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
+        <h2 data-reveal="zoom" className="mx-auto max-w-2xl text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
           World-Class Facilities
         </h2>
-        <ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ul data-reveal-stagger="up" className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map(({ icon: Icon, title, text }) => (
             <li key={title} className="group rounded-2xl bg-ice-blue p-7 transition duration-300 hover:-translate-y-1 hover:bg-brand">
               <span className="grid h-14 w-14 place-items-center rounded-xl bg-white text-brand">
